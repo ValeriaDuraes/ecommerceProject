@@ -5,6 +5,7 @@ body{
      align-content: center;
      display: flex;
      flex-direction: column;
+     width: 100%;
 }
 /* inico conteudo_hader */
 
@@ -64,6 +65,7 @@ header{
   padding: 13px;    
   background-color: rgba(35, 35, 35, 0);
   text-decoration: none;
+  /* box-shadow: 2px 1px 4px rgba(3, 3, 3, 0.685);     */
   box-shadow: 2px 2px 7px rgba(88, 87, 17, 0.429);  
   transition: transform 1s;
   outline: none;
@@ -81,7 +83,7 @@ padding: 10px;
 background: rgb(7,5,8);
 background: linear-gradient(180deg, rgba(7,5,8,1) 0%, rgba(32, 6, 6, 0.619) 89%, rgba(0, 0, 0, 0.491) 100%);
 border-radius: 10px;
- 
+}
 h1 {
   font-size: 3vmin;
   background: url(assets/imgcadastro/imgs_cadastro/fundo\ letra.jpg);
@@ -93,6 +95,10 @@ h1 {
 gap: 3px;
 }
   .container{
+    
+    /* background-image: url(assets/checkout/mobilefundo.png) ;
+    background-repeat: no-repeat;
+    background-size: contain; */
     height: auto;
     width: 100%;
     justify-content: none;

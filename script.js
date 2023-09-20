@@ -111,9 +111,10 @@ const catalog = [
 
 for (const productCatalog of catalog) {
 const cardProducts = `
-<div style="border: solid; width: 230px;" id="card" ${productCatalog.id}>
+
+ 
+<div id="card" ${productCatalog.id}>
   <img 
-    style="width: 221px;" 
     src="assets/images/${productCatalog.image}" 
     alt="Produto 1"
   />
@@ -130,6 +131,7 @@ const cardProducts = `
   
   
 </div>
+
 `;
 document.getElementById('products-on-sale').innerHTML += cardProducts;
 document.getElementById('launch-products').innerHTML += cardProducts;
