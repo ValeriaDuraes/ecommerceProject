@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #1d1d1dee;
+  background-color: #1d1d1de0;
 }
 
 /* HEADER */
@@ -27,13 +27,14 @@ header {
 }
 
 #logo {
-  margin-left: 30px;
+  margin-left: 2%;
 }
+
 
 #searchBox {
   border-radius: 100px;
-  height: 45px;
-  width: 550px;
+  height: 40px;
+  width: 65%;
   color: #c2b715c0;
   background-color: #232323ba;
   border: none;
@@ -50,10 +51,36 @@ header {
   font-size: 25px;
   padding: 4px;
 }
-
-#open-cart {
-  margin-right: 30px;
+.icons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-right:1%;
 }
+
+#card{
+  width: 200px;
+  background: rgba(15, 15, 15, 0.566);
+  overflow: hidden;
+  box-shadow: 2px 2px 7px rgb(0, 0, 0);
+}
+
+#card img{
+width: 100%;
+height: 200px;
+transition: 0.4s all ease-in-out;
+
+}
+
+#card:hover img{
+  transform: scale(1.18);
+  cursor: pointer;
+ 
+}
+/* #open-cart {
+ fullBanners
+ 
+} */
 
 /* CATEGORIAS */
 #category {
@@ -152,19 +179,15 @@ li a {
 
 /* HEADER */
 @media (max-width: 830px) {
-  header {
-
-    
-    /* visibility: hidden; */
-  }
-
-  #logo {
-    align-items: center;
-  }
+header{
+  justify-content: center;
+}  
 
   #searchBox {
-    display: block;
-    width: 100%;
+    width: 80%;
+  }
+  #category{
+    display:none;
   }
 }
 
@@ -186,5 +209,6 @@ li a {
   width: 80%;
   height: auto;
   text-align: justify;
+  margin: 15px;
 }
 }
