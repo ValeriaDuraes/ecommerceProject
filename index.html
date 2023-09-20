@@ -8,6 +8,29 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+  <!-- CART -->
+
+    <div id="cart" class="close">
+      <p id="cart-content" class="cart-content">Meu carinho</p>
+      <span id="close-cart" class="fechar">&times;</span>
+        <!-- <i id="close-cart" class="fa-solid fa-circle-xmark"></i> -->
+      
+        <section id="cart-products">
+          <p>Boneco</p>
+          <p>Mochila</p>
+          <p>Caneca</p>
+        </section>
+        <p id="cart-total-price">R$200</p>
+        <button id="buy">Comprar</button>
+        
+    </div>
+
+
+
+    
+
+
+  <!-- CONTAINER PRINCIPAL -->
   <div id="container">
 
   <!-- HEADER -->
@@ -39,11 +62,13 @@
   <!-- CARDS -->
   <main>
     <h2 id="section-title">Promoções</h2>
-    <section id="products-container"></section>
+    <section id="products-on-sale"></section>
+
     <h2 id="section-title">Lançamentos</h2>
-    <section id="products-container"></section>
+    <section id="launch-products"></section>
+    
     <h2 id="section-title">Mais Vendidos</h2>
-    <section id="products-container"></section>
+    <section id="top-selling-products"></section>
   </main>
 </div>
 
@@ -103,5 +128,6 @@
 </footer>
 
 <script src="script.js"></script>
+<script src="menuCart.js"></script>
 </body>
 </html>

@@ -133,25 +133,27 @@ const cardProducts = `
 </div>
 
 `;
-document.getElementById('products-container').innerHTML += cardProducts;
+document.getElementById('products-on-sale').innerHTML += cardProducts;
+document.getElementById('launch-products').innerHTML += cardProducts;
+document.getElementById('top-selling-products').innerHTML += cardProducts;
 }
 
 
 
 
 
-const headerMobile = `
+// const headerMobile = `
 
-<header>
-    <img id="logo" src="assets/logo/logo.svg" alt="Logo e-commerce Harry Potter">
-    <div id="icons">
-    <i class="fa-solid fa-user"></i>
-    <i id="open-cart" class="fa-solid fa-cart-shopping"></i>
-  </div>
-    <input type="text" name="" id="searchBox" placeholder="O que você procura?">
-  </header>
-`;
-document.getElementsByClassName('')
+// <header>
+//     <img id="logo" src="assets/logo/logo.svg" alt="Logo e-commerce Harry Potter">
+//     <div id="icons">
+//     <i class="fa-solid fa-user"></i>
+//     <i id="open-cart" class="fa-solid fa-cart-shopping"></i>
+//   </div>
+//     <input type="text" name="" id="searchBox" placeholder="O que você procura?">
+//   </header>
+// `;
+// document.getElementsByClassName('')
 
 
 
