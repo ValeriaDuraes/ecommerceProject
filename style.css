@@ -12,6 +12,51 @@ body {
   background-color: #1d1d1dee;
 }
 
+/* ABRE E FECHA CARRINHO */
+#cart {
+  position: fixed;
+  top: 0;
+  right: -360px;
+  width: 360px;
+  height: 100%;
+  color: white;
+  background-color: #020617;
+  transition: right 0.3s ease-in-out;
+  z-index: 50;
+}
+
+#cart.close {
+  right: -360px;
+}
+
+#cart.open {
+  right: 0px;
+}
+
+#cart_header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+#cart-content {
+  font-size: 25px;
+  margin-top: 2px;
+  padding: 200px;
+}
+
+#close-cart {
+  font-size: 25px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 /* HEADER */
 header {
   display: flex;
@@ -84,11 +129,13 @@ ul a {
   margin-left: 30px;
 }
 
-#products-container {
+#products-on-sale,
+#launch-products,
+#top-selling-products  {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-  margin-left: 30px;
+  margin: 30px;
 }
 
 #card {
