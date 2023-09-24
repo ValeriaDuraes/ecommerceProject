@@ -11,35 +11,31 @@
   <!-- CART -->
 
     <div id="cart" class="close">
-      <p id="cart-content" class="cart-content">Meu carrinho</p>
-      <span id="close-cart" class="fechar">&times;</span>
+      <div class="header-cart">
+        <p id="cart-content" class="cart-content">Meu carrinho</p>
+        <span id="close-cart" class="fechar">&times;</span>
+      </div>
         <!-- <i id="close-cart" class="fa-solid fa-circle-xmark"></i> -->
       
         <section id="cart-products">
           <p>Boneco</p>
           <p>Mochila</p>
           <p>Caneca</p>
+          <p id="cart-total-price">R$200</p>
+          <a href="checkout.html"><button id="buyBtn">Finalizar Compra</button></a>
         </section>
-        <p id="cart-total-price">R$200</p>
-        <button id="buy">Comprar</button>
-        
     </div>
-
-
-
-    
-
 
   <!-- CONTAINER PRINCIPAL -->
   <div id="container">
 
   <!-- HEADER -->
   <header>
-    <img id="logo" src="assets/logo/logo.svg" alt="Logo e-commerce Harry Potter">
+    <a href="index.html"><img id="logo" src="assets/logo/logo.svg" alt="Logo e-commerce Harry Potter"></a>
     <input type="text" name="" id="searchBox" placeholder="O que você procura?">
 
     <div id="icons" class="icons">
-      <i class="fa-solid fa-user"></i>
+      <a href="cadastro.html"><i class="fa-solid fa-user"></i></a>
       <i id="open-cart" class="fa-solid fa-cart-shopping"></i>
     </div>
   </header>
