@@ -8,6 +8,8 @@
   //   female: false,
   // },
 
+//===================================================================
+// ARRAY DE OBJETOS COM OS DADOS DO PRODUTO, SIMULANDO UM BD
 const catalog = [
   {
     id: 1,
@@ -106,41 +108,77 @@ const catalog = [
     image: 'product-1.png',
     female: false,
   },
-  
 ]
 
+//===================================================================
+// LOOP PARA PEGAR PRODUTO POR PRODUTO DO ARRAY CATALOG
 for (const productCatalog of catalog) {
+//===================================================================
+// ABAIXO UTILIZEI DO TEMPLATE LITERALS PARA ACRESCENTAR HTML NO JS
 const cardProducts = `
-
- 
-<div id="card" ${productCatalog.id}>
+<div id="card">
   <img 
     src="assets/images/${productCatalog.image}" 
-    alt="Produto 1"
+    alt="Imagem do rpoduto ${productCatalog.name}"
   />
-  <div id="product-details">
 
+  <div id="product-details">
     <p class="product-name">${productCatalog.name}</p>
     <p class="product-price">R$${productCatalog.price}</p>
-    
   </div>
 
   <div id="button-card">
-    <button><i class="fa-solid fa-cart-shopping"></i></button>
+    <button><i id="add-${productCatalog.id}" class="fa-solid fa-cart-shopping"></i></button>
   </div>
-  
-  
 </div>
-
 `;
+//===================================================================
+// UTILIZANDO DA DOM PARA RENDERIZAR OS CARDS NO HTML
 document.getElementById('products-on-sale').innerHTML += cardProducts;
 document.getElementById('launch-products').innerHTML += cardProducts;
 document.getElementById('top-selling-products').innerHTML += cardProducts;
+// ADICIONAR O PRODUTO NO CARRINHO
+document.getElementById(`add-${productCatalog.id}`)
 }
 
+for (const productCatalog of catalog) {
+  document.getElementById(`add-${productCatalog.id}`).addEventListener('click', () => addCart(productCatalog.id));
+}
 
+//===================================================================
+// ABRIR E FECHAR O CARRINHO DE COMPRAS
+const openCart = document.getElementById('open-cart');
+const closeCart = document.getElementById('close-cart');
+const cart = document.getElementById('cart');
 
+openCart.addEventListener('click', () => {
+  cart.classList.add('open');
+});
 
+closeCart.addEventListener('click', () => {
+  cart.classList.remove('open');
+});
+
+//===================================================================
+// ACRESCENTANDO PRODUTOS AO CARRINHO
+function addCart(idProduct) {
+  const product = catalog.find ((p) => p.id === idProduct);
+  const containerProductsCart = document.getElementById('cart-products')
+  const cardProdutoCart = `
+  <article class="mini-cart">
+    <span id="delete-product" class="fechar">&times;</span>
+
+    <img src="assets/images/${product.image}" 
+    alt="Carrinho: ${product.name}">
+
+    <div id="mini-cart-content">
+      <p>${product.name}</p>
+      <p>R$${product.price}</p>
+    </div>
+  </article>
+  `;
+  containerProductsCart.innerHTML += cardProdutoCart;
+}
 
 // const headerMobile = `
 
