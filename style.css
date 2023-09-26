@@ -12,6 +12,7 @@ body {
   background-color: #1d1d1de0;
 }
 
+
 /* ABRE E FECHA CARRINHO */
 #cart {
   position: fixed;
@@ -104,7 +105,7 @@ header {
 }
 
 #card{
-  width: 200px;
+  width: 220px;
   background: rgba(15, 15, 15, 0.566);
   overflow: hidden;
   box-shadow: 2px 2px 7px rgb(0, 0, 0);
@@ -127,6 +128,11 @@ transition: 0.4s all ease-in-out;
  
 } */
 
+#fullBanners{
+  width: 80%;
+  height: auto;
+}
+
 /* CATEGORIAS */
 #category {
   margin-top: 90px;
@@ -144,8 +150,11 @@ ul a {
 }
 
 /* FULL BANNER CARROUSSEL */
+#fullBanners {
+  width: 100%;
+}
 #fullBanners img {
-  height: 300px;
+  height: auto;
   width: 100%;
   margin: 15px 0px;
 }
