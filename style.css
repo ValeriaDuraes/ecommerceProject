@@ -222,7 +222,7 @@ ul a {
 
 /* FULL BANNER CARROUSSEL */
 #fullBanners img {
-  height: 300px;
+  height: auto;
   width: 100%;
   margin: 15px 0px;
 }
@@ -238,7 +238,8 @@ ul a {
 #top-selling-products  {
   display: flex;
   flex-wrap: wrap;
-  gap: 75px;
+  justify-content: space-around;
+  gap: 25px;
   margin: 30px;
 }
 
@@ -336,10 +337,26 @@ header{
   #searchBox {
     width: 80%;
   }
-  #category{
+
+  #category {
     display:none;
   }
+
 }
+
+@media (max-width: 420px) {
+  header{
+    justify-content: center;
+  }  
+  
+    #searchBox {
+      width: 80%;
+    }
+  
+    #category {
+      display:none;
+    }
+  }
 
 /* CARDS */
 @media (max-width: 830px) {
