@@ -341,8 +341,8 @@ li a {
 
 /* RESPONSIVIDADE */
 
-/* HEADER */
-@media (max-width: 674px) {
+/* HEADER */ 
+@media (max-width: 673px) {
 header{
   justify-content: center;
 }  
@@ -358,7 +358,7 @@ header{
   }
 #logo{
 position: relative;
-right: 100px;
+right: 105px;
 
 }
 
