@@ -180,13 +180,12 @@ header {
   margin-right:1%;
 } 
 
-<<<<<<< HEAD
 #card{
   width: 220px;
-=======
+}
+
 #card {
   width: 200px;
->>>>>>> 13e40ccc4b7cf30eef71c659f0c9e402f2d06631
   background: rgba(15, 15, 15, 0.566);
   overflow: hidden;
   box-shadow: 2px 2px 7px rgb(0, 0, 0);
