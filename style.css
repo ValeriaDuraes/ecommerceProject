@@ -79,6 +79,33 @@ body {
 
 #cart-products {
   margin-left: 30px;
+  /* height: 2/5; */
+  overflow-y: auto;
+}
+
+.add-cart {
+  display: flex;
+  position: relative;
+  width: 40%;
+  align-items: center;
+  justify-content: space-evenly;
+  /* flex-direction: row-reverse; */
+}
+
+.button {
+  position: relative;
+  top: 35px;
+  border-radius: 100%;
+  border: none;
+  background-color: white;
+}
+
+#product-quantity {
+  width: 30px;
+  border: none;
+  background-color: lightgrey;
+  position: relative;
+  top: 30px;
 }
 
 #cart-total-price {
