@@ -12,6 +12,7 @@ body {
   background-color: #1d1d1de0;
 }
 
+
 /* ABRE E FECHA CARRINHO */
 #cart {
   position: fixed;
@@ -206,6 +207,10 @@ header {
   margin-right:1%;
 } 
 
+#card{
+  width: 220px;
+}
+
 #card {
   width: 200px;
   background: rgba(15, 15, 15, 0.566);
@@ -231,6 +236,11 @@ header {
  
 } */
 
+#fullBanners{
+  width: 80%;
+  height: auto;
+}
+
 /* CATEGORIAS */
 #category {
   margin-top: 90px;
@@ -248,6 +258,9 @@ ul a {
 }
 
 /* FULL BANNER CARROUSSEL */
+#fullBanners {
+  width: 100%;
+}
 #fullBanners img {
   height: auto;
   width: 100%;
