@@ -12,7 +12,6 @@ body {
   background-color: #1d1d1de0;
 }
 
-
 /* ABRE E FECHA CARRINHO */
 #cart {
   position: fixed;
@@ -68,7 +67,6 @@ body {
 #close-cart:hover {
   color: red;
 }
-
 
 .close {
   position: absolute;
@@ -179,7 +177,6 @@ header {
   margin-left: 2%;
 }
 
-
 #searchBox {
   border-radius: 100px;
   height: 40px;
@@ -237,7 +234,7 @@ header {
 } */
 
 #fullBanners{
-  width: 80%;
+  /* width: 80%; */
   height: auto;
 }
 
@@ -265,6 +262,8 @@ ul a {
   height: auto;
   width: 100%;
   margin: 15px 0px;
+  /*object-fit:cover evita que a imagem fique distorcida*/
+  object-fit: cover;
 }
 
 /* CARDS */
@@ -308,7 +307,7 @@ ul a {
   border-radius: 16px;
 }
 
-#button-card::hover {
+#button-card:hover {
   color: #FFE181;
   
 }
@@ -319,12 +318,14 @@ ul a {
   height: auto;
   width: 100%;
   text-align: center;
+  /*coloca um espaçamento no footer pra que não fique tão rente ao final da tela*/
+  padding: 20px 0 14px 0;
 }
 
 .list-footer {
   width: 33%;
   height: auto;
-  text-align:justify;
+  text-align: justify;
 }
 
 .linksFooter {
@@ -368,10 +369,12 @@ li a {
 
 /* RESPONSIVIDADE */
 
-/* HEADER */
-@media (max-width: 674px) {
-header{
+/* HEADER */ 
+@media (max-width: 673px) {
+header {
   justify-content: center;
+  /*evita que o campo de busca fique grudado com o topo do banner*/
+  padding-bottom: 20px;
 }  
 
   #searchBox {
@@ -383,24 +386,35 @@ header{
   #category {
     display:none;
   }
-#logo{
-position: relative;
-right: 100px;
 
+  #logo {
+    position: relative;
+    right: 105px;
+  }
+
+  #fullBanners {
+    /*como houve aumento na altura do Header p/ telas pequenas, o banner precisa de um padding-top*/
+    padding-top: 118px;
+  }
+
+  #fullBanners img {
+    /*estipula uma altura mínima p/ que a imagem do banner não fique muito pequena*/
+    min-height: 200px;
+  }
+
+  header .fa-solid{
+    position: relative;
+    top: -60px;
+    left: -15px;
+  
+  }
 }
 
-header .fa-solid{
-  position: relative;
-  top: -60px;
-  left: -15px;
- 
-}
-}
-
-@media (max-width: 420px) {
-  header{
+/*media query foi comentada porque as mesmas regras já foram aplicadas*/
+/* @media (max-width: 420px) {
+  header {
     justify-content: center;
-  }  
+  }
   
     #searchBox {
       width: 80%;
@@ -409,7 +423,7 @@ header .fa-solid{
     #category {
       display:none;
     }
-  }
+  } */
 
 /* CARDS */
 @media (max-width: 830px) {
@@ -424,11 +438,11 @@ header .fa-solid{
 
 /* FOOTER RESPONSIVO */
 @media (max-width: 600px) {
-.list-footer{
-  flex-wrap: wrap;
-  width: 80%;
-  height: auto;
-  text-align: justify;
-  margin: 15px;
-}
+  .list-footer{
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    text-align: justify;
+    margin: 15px;
+  }
 }
