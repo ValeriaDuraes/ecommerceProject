@@ -368,34 +368,47 @@ li a {
 
 /* RESPONSIVIDADE */
 
-/* HEADER */
-@media (max-width: 674px) {
-header{
-  justify-content: center;
-}  
-
-  #searchBox {
-    width: 80%;
-    position: relative;
-    right: -35px;
+/* HEADER */ 
+@media (max-width: 673px) {
+  header {
+    justify-content: center;
+    /*evita que o campo de busca fique grudado com o topo do banner*/
+    padding-bottom: 20px;
+  }  
+  
+    #searchBox {
+      width: 80%;
+      position: relative;
+      right: -35px;
+    }
+  
+    #category {
+      display:none;
+    }
+  
+    #logo {
+      position: relative;
+      right: 105px;
+    }
+  
+    #fullBanners {
+      /*como houve aumento na altura do Header p/ telas pequenas, o banner precisa de um padding-top*/
+      padding-top: 118px;
+    }
+  
+    #fullBanners img {
+      /*estipula uma altura mínima p/ que a imagem do banner não fique muito pequena*/
+      min-height: 200px;
+    }
+  
+    header .fa-solid{
+      position: relative;
+      top: -60px;
+      left: -15px;
+    
+    }
   }
-
-  #category {
-    display:none;
-  }
-#logo{
-position: relative;
-right: 105px;
-
-}
-
-header .fa-solid {
-  position: relative;
-  top: -60px;
-  left: -15px;
- 
-  }
-}
+  
 
 @media (max-width: 420px) {
   header{
