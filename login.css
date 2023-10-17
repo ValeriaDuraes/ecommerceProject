@@ -22,10 +22,7 @@ header{
     margin-left: 2px;
     width: 120px   
 }
-.imgnavegacao {
-    margin-right: 20px;
-    width: 50%;
-}
+
 
 /* navbar */
 
@@ -43,7 +40,7 @@ body{
     background-position: center;
     background-repeat:  repeat-x;
     width: 100%;
-    height: 55vh;
+    height: 45vh;
 }
 
 form a{
@@ -55,11 +52,11 @@ form a{
     position: relative;
     border-radius: 20px;
     text-align: center;
-    top:-70px;
+    top:-180px;
     width: 50%;
     height: auto;
     background: rgb(7,5,8);
-    background: linear-gradient(180deg, rgb(0, 0, 10) 0%, rgba(12, 32, 113, 0.409) 89%, rgba(2, 1, 58, 0.413) 100%);}
+    background: linear-gradient(180deg, rgb(8, 11, 18) 0%, rgb(1, 13, 62) 89%, rgba(0, 0, 0, 0.169) 100%);}
 
     .loginInput img{
         width: 20%;
@@ -165,9 +162,7 @@ button:focus{
 a{
     text-decoration: none;
 }
-span{
-    color: #FFE181;
-}
+
 @media (min-width:553px)and ( max-width: 690px ) {
 
     .surgindo{
@@ -181,7 +176,7 @@ span{
     .loginInput{
         width: 90%;
         padding: 5px;
-        top:-90px;
+        top:-130px;
     }
     .fundobandeira{
       margin-top: -80px;
@@ -203,10 +198,11 @@ span{
     .loginInput{
         width: 90%;
         padding: 5px;
-        top:-120px;
+        top:-180px;
     }
     .fundobandeira{
       margin-top: -80px;
+      height: 55vh;
     }
 
 }
@@ -273,3 +269,10 @@ span{
   }
   /* FIM FOTTER */
   }
+
+  .cadastrar{
+    flex-wrap: wrap;
+  }
+  .cadastrar span{
+    color: #FFE181;
+}
